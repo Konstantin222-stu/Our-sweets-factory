@@ -1,0 +1,119 @@
+.header{
+    padding-top: 21px;
+    padding-bottom: 14px;
+}
+.header__content{
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__list{
+display: flex;
+gap: 39px;
+}
+.nav-list__item{
+    color: #fff;
+    font-size: 19px;
+}
+.nav_mob{
+    display: none;
+}
+
+.nav__list_mob{
+    display: none;
+}
+@media (max-width:1045px) {
+    .nav__list, nav>.button{
+        display: none;
+    }
+
+
+    .menu-btn{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #FF7CFC;
+        position: fixed;
+        z-index: 2;
+        right: 50px;
+    }
+
+    .menu-btn span, 
+    .menu-btn span::before,
+     .menu-btn span::after{
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #16171D;
+    }
+
+    .menu-btn span::before, .menu-btn span::after{
+        content: "";
+        transition: 0.5s;
+    }
+
+    .menu-btn span::before{
+        transform: translateY(-5px);
+    }
+
+    .menu-btn span::after{
+        transform: translateY(5px);
+    }
+
+    .menu-btn_active span::before{
+        transform:rotate(45deg);
+    }
+
+    .menu-btn_active span::after{
+        transform:rotate(-45deg);
+    }
+
+    .menu-btn_active span{
+        height: 0;
+    }
+    .menu-btn_active{  
+        
+    }
+
+    .nav__list_mob{
+        display: block;
+        transform-origin: center;
+        opacity: 0;
+        height: 0;
+    }
+    .nav__list_mob_active{
+        background-color: #3E77AC;
+        position: absolute;
+        display: block;
+        transform: translateX(-5%);
+        opacity: 1;
+        list-style: none;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__list_mob>li>a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .nav__list_mob>li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
+}

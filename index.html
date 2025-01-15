@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script/timer.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content wrap">
+            <nav class="nav">
+                <img src="img/logo_header.svg" alt="">
+                <ul class="nav__list">
+                    <li class="nav-list__item"><a href="">О нас</a></li>
+                    <li class="nav-list__item"><a href="">Услуги</a></li>
+                    <li class="nav-list__item"><a href="">Наши работы</a></li>
+                    <li class="nav-list__item"><a href="">Отзывы</a></li>
+                    <li class="nav-list__item"><a href="">Контанты</a></li>
+                </ul>
+                <a href="" class="button button_md button_pink">Забронировать магию</a>
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
+                <script>
+                    $('.menu-btn').on('click', function(e) {
+                        e.preventDefault;
+                        $(this).toggleClass('menu-btn_active');
+                        $('.nav__list_mob').toggleClass('nav__list_mob_active')
+                    });
+                </script>
+                <ul class="nav__list_mob">
+                    <ul class="nav__list_mob nav__list_button">
+                        <li class="nav-list__item"><a href="">О нас</a></li>
+                        <li class="nav-list__item"><a href="">Услуги</a></li>
+                        <li class="nav-list__item"><a href="">Наши работы</a></li>
+                        <li class="nav-list__item"><a href="">Отзывы</a></li>
+                        <li class="nav-list__item"><a href="">Контанты</a></li>
+                        <a href="" class="button button_md button_pink">Забронировать магию</a>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero__content">
+            <div class="hero__info">
+                <h1 class="title title_lg title_white">
+                    Привлеките Внимание с Аттракционом "Фабрика Сладости"
+                </h1>
+                <p class="desc desc_white desc_lg">
+                    Пробудите волшебство и радость с нашим аттракционом "Фабрика Сладости"!
+                </p>
+                <p class="desc desc_white desc_md">
+                    Бесплатная доставка по всей России
+                </p>
+                <a href="#form" class="button button_pink button_lg">
+                    Забронировать магию
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="form" id="form">
+        <div class="form__content wrap">
+            <div class="form__info">
+                <h2 class="title title_md title_black">
+                    Опыт волшебства<br/>
+                    Прямо Сейчас!
+                </h2>
+                <p class="desc desc_black desc_md">
+                    Заполните форму ниже, чтобы зарезервировать "Фабрику Сладости" уже сегодня!
+                    <span class="bold">
+                        в ПОДАРОК!
+                    </span>
+                    <br/>
+                    <br/>
+                    Возможен выезд специалиста
+                    на вашу территорию!
+                    <br/>
+                    <br/>
+                    Торопитесь! Предложение действует еще:
+                </p>
+                <div class="form__time">
+                    <div class="time__hr" id="min">
+
+                    </div>
+                    :
+                    <div class="time__min" id="sec">
+
+                    </div>
+                </div>
+            </div>
+            <div class="form__block">
+                <div class="form__form">
+                    <h2 class="title title_md title_black">
+                        Зарезервировать
+                    </h2>
+                    <p class="desc desc_black desc_md">
+                        Заполните форму ниже, чтобы зарезервировать свой собственный мир вкусностей прямо сейчас!
+                    </p>
+                    <form method="post" action="mail_application.php">
+                        <input type="text" name="name" required placeholder="Ваше имя*">
+                        <input type="text" name="phone" required placeholder="Ваш телефон*">
+                        <input type="text" name="email" required placeholder="Ваш e-mail">
+                        <input class="button button_pink button_lg" type="submit" value="Зарезервировать">
+                    </form>
+                    <div class="form__conteiner">
+                        <img src="img/icon_form.svg" alt="">
+                        <a href="politick.pdf" class="desc desc_lt-md desc_gray">
+                            Ваши данные не будут переданы
+                            третьим лицам
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attraction">
+        <div class="attraction__content wrap">
+            <h2 class="title title_md title_blue">
+                Откройте Дверь в Мир Волшебства "Фабрики Сладости"
+            </h2>
+            <div class="attraction__cards">
+                <div class="attraction__card">
+                    <img src="img/p1.png" alt="">
+                    <p class="desc desc_blue desc_lt-md">
+                        Беззаботное Веселье: Насладитесь беззаботным весельем, зная, что каждая деталь вашего мероприятия в наших надежных руках.
+                    </p>
+                </div>
+                <div class="attraction__card">
+                    <img src="img/p2.png" alt="">
+                    <p class="desc desc_blue desc_lt-md">
+                        Профессиональный Подход: Наши опытные специалисты обеспечат безукоризненное исполнение вашего мероприятия, оставляя вам только приятные воспоминания.
+                    </p>
+                </div>
+                <div class="attraction__card">
+                    <img src="img/p3.png" alt="">
+                    <p class="desc desc_blue desc_lt-md">
+                        Уникальный Опыт: Предоставьте вашим гостям уникальный и запоминающийся опыт, который будет обсуждаться еще долгое время после завершения события.
+                    </p>
+                </div>
+            </div>
+            <p class="desc desc_blue desc_lg desc_bold">
+                Погрузитесь в уникальный опыт вкусов и веселья, который не оставит вас равнодушными!
+            </p>
+        </div>
+    </div>
+    <div class="possibilities">
+        <div class="possibilities__content wrap">
+            <h2 class="title title_md title_blue">
+                широкие возможности
+            </h2>
+            <div class="possibilities__cards">
+                <div class="possibilities__card">
+                    <h3 class="title title_lt title_white">
+                        Консультация по Местоположению и Размещению
+                    </h3>
+                    <div class="possibilities__card-conteiner">
+                        <img src="img/voz1.png" alt="">
+                        <div class="possibilities__info">
+                            <p class="desc desc_lt desc_white">
+                                Помощь в выборе оптимального местоположения и размещении аттракциона для максимальной безопасности и привлекательности.
+                                <br/>
+                                <br/>
+                                Цена:
+                                <span>
+                                    По запросу
+                                </span>
+                            </p>
+                            <a href="#form" class="button button_pink button_lg">
+                                выбрать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="possibilities__card">
+                    <h3 class="title title_lt title_white">
+                        Обновление и Модернизация
+                    </h3>
+                    <div class="possibilities__card-conteiner">
+                        <img src="img/voz2.png" alt="">
+                        <div class="possibilities__info">
+                            <p class="desc desc_lt desc_white">
+                                Предложение современных обновлений и возможностей модернизации аттракциона для улучшения функциональности и безопасности.
+                                <br/>
+                                <br/>
+                                Цена:
+                                <span>
+                                    По запросу
+                                </span>
+                            </p>
+                            <a href="#form" class="button button_pink button_lg">
+                                выбрать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="possibilities__card">
+                    <h3 class="title title_lt title_white">
+                        Обучение Персонала
+                    </h3>
+                    <div class="possibilities__card-conteiner">
+                        <img src="img/voz1.png" alt="">
+                        <div class="possibilities__info">
+                            <p class="desc desc_lt desc_white">
+                                Полное обучение вашего персонала по эксплуатации и техническому обслуживанию аттракциона.
+                                <br/>
+                                <br/>
+                                Цена:
+                                <span>
+                                    По запросу
+                                </span>
+                            </p>
+                            <a href="#form" class="button button_pink button_lg">
+                                выбрать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="possibilities__card">
+                    <h3 class="title title_lt title_white">
+                        Техническая Поддержка
+                    </h3>
+                    <div class="possibilities__card-conteiner">
+                        <img src="img/voz1.png" alt="">
+                        <div class="possibilities__info">
+                            <p class="desc desc_lt desc_white">
+                                Круглосуточная техническая поддержка для оперативного реагирования на любые технические вопросы или проблемы.
+                                <br/>
+                                <br/>
+                                Цена:
+                                <span>
+                                    По запросу
+                                </span>
+                            </p>
+                            <a href="#form" class="button button_pink button_lg">
+                                выбрать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider__content wrap">
+            <section class="splide" id="splidePhoto" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="img/slid.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/slid.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/slid.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/slid.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="dream">
+        <div class="dream__content wrap">
+            <h2 class="title title_md title_blue">
+                ВОЗЬМИТЕ У НАС МЕЧТУ
+            </h2>
+            <div class="dream__cards">
+                <div class="dream__card">
+                    <img src="img/m1.png" alt="">
+                    <h3 class="title title_lt title_blue">
+                        Уникальный Опыт
+                    </h3>
+                    <p class="desc desc_lt desc_blue">
+                        Предложите своим гостям уникальный опыт, который они никогда не забудут. Аттракцион "Фабрика Сладости" погрузит их в мир волшебства и радости, создавая неповторимые впечатления.
+                    </p>
+                </div>
+                <div class="dream__card">
+                    <img src="img/m2.png" alt="">
+                    <h3 class="title title_lt title_blue">
+                        Беззаботное Веселье
+                    </h3>
+                    <p class="desc desc_lt desc_blue">
+                        Наша команда профессионалов обеспечит беспроблемное и веселое мероприятие. Вы сможете насладиться моментом, зная, что все детали в надежных и опытных руках.
+                    </p>
+                </div>
+                <div class="dream__card">
+                    <img src="img/m3.png" alt="">
+                    <h3 class="title title_lt title_blue">
+                        Эксклюзивность
+                    </h3>
+                    <p class="desc desc_blue desc_lt">
+                        Аттракцион "Фабрика Сладости" подарит вашему мероприятию неповторимый шарм и уникальность, делая его незабываемым для каждого гостя.
+                    </p>
+                </div>
+                <div class="dream__card">
+                    <img src="img/m4.png" alt="">
+                    <h3 class="title title_lt title_blue">
+                        Профессиональная Установка и Обслуживание
+                    </h3>
+                    <p class="desc desc_blue desc_lt">
+                        Мы предоставляем полный спектр услуг по установке, обслуживанию и технической поддержке аттракциона, гарантируя безопасность и бесперебойную работу в течение всего мероприятия.
+                    </p>
+                </div>
+                <div class="dream__card">
+                    <img src="img/m5.png" alt="">
+                    <h3 class="title title_lt title_blue">
+                        Гибкость и Поддержка
+                    </h3>
+                    <p class="desc desc_blue desc_lt">
+                        Наша команда готова работать с вашим графиком и требованиями, обеспечивая персонализированный подход и гибкий уровень обслуживания, адаптированный к вашим потребностям.
+                    </p>
+                </div>
+                <div class="dream__card">
+                    <img src="img/m6.png" alt="">
+                    <h3 class="title title_lt title_blue">
+                        Забота о Деталях
+                    </h3>
+                    <p class="desc desc_lt desc_blue">
+                        Мы уделяем внимание каждой детали, чтобы убедиться, что ваше мероприятие с аттракционом "Фабрика Сладости" станет ярким и незабываемым для каждого гостя.
+                    </p>
+                </div>
+            </div>
+            <a href="#form" class="button button_pink button_lg">Получить консультацию</a>
+        </div>
+    </div>
+    <div class="steps">
+        <div class="steps__content wrap">
+            <div class="steps__info">
+                <h2 class="title title_md title_white">
+                    Получить<br/>
+                    аттракцион просто
+                </h2>
+                <div class="steps__list">
+                    <hr class="steps__line">
+                    <div class="steps__item">
+                        <div class="steps__number">1</div>
+                        <p class="desc desc_lt-md desc_white d">
+                            Выберите дату и время
+                        </p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="steps__number">2</div>
+                        <p class="desc desc_lt-md desc_white d">
+                            Свяжитесь с нами через форму или позвоните 
+                            <a href="">+7 (495) 455-45-45</a>
+                        </p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="steps__number">3</div>
+                        <p class="desc desc_lt-md desc_white d">
+                            Заключите договор и внесите задаток.
+                        </p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="steps__number">4</div>
+                        <p class="desc desc_lt-md desc_white d">
+                            Получите подтверждение и подготовьтесь к установке.
+                        </p>
+                    </div>
+                </div>
+                <a href="#form" class="button button_lg button_dotted">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="reviews__content wrap">
+            <h2 class="title title_md title_blue">
+                Отзывы обладателей
+            </h2>
+            <section class="splide" id="splideCatalog" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="review">
+                                <img src="img/avatar.png" alt="">
+                                <div class="review__content">
+                                    <h3 class="title title_lt title_blue">
+                                        Турчина Виктория
+                                        
+                                    </h3>
+                                    <p class="desc desc_lt-md desc_blue">
+                                        Я безумно рада, что мы выбрали аттракцион "Фабрика Сладости" для нашего праздника! Процесс установки был быстрым и беззаботным, а сам аттракцион поразил всех гостей. Спасибо за незабываемый день!
+                                    </p>
+                                    <div class="review__stars">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review">
+                                <img src="img/avatar.png" alt="">
+                                <div class="review__content">
+                                    <h3 class="title title_lt title_blue">
+                                        Турчина Виктория
+                                        
+                                    </h3>
+                                    <p class="desc desc_lt-md desc_blue">
+                                        Я безумно рада, что мы выбрали аттракцион "Фабрика Сладости" для нашего праздника! Процесс установки был быстрым и беззаботным, а сам аттракцион поразил всех гостей. Спасибо за незабываемый день!
+                                    </p>
+                                    <div class="review__stars">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review">
+                                <img src="img/avatar.png" alt="">
+                                <div class="review__content">
+                                    <h3 class="title title_lt title_blue">
+                                        Турчина Виктория
+                                        
+                                    </h3>
+                                    <p class="desc desc_lt-md desc_blue">
+                                        Я безумно рада, что мы выбрали аттракцион "Фабрика Сладости" для нашего праздника! Процесс установки был быстрым и беззаботным, а сам аттракцион поразил всех гостей. Спасибо за незабываемый день!
+                                    </p>
+                                    <div class="review__stars">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review">
+                                <img src="img/avatar.png" alt="">
+                                <div class="review__content">
+                                    <h3 class="title title_lt title_blue">
+                                        Турчина Виктория
+                                        
+                                    </h3>
+                                    <p class="desc desc_lt-md desc_blue">
+                                        Я безумно рада, что мы выбрали аттракцион "Фабрика Сладости" для нашего праздника! Процесс установки был быстрым и беззаботным, а сам аттракцион поразил всех гостей. Спасибо за незабываемый день!
+                                    </p>
+                                    <div class="review__stars">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="map">
+        <div class="map__content wrap">
+            <h2 class="title title_md title_white">
+                Мы на карте
+            </h2>
+            <p class="desc desc_lt-md desc_white">
+                Адрес: г. Москва, ул. Самаринская, 1/5
+            </p>
+            <div class="map__yandex-map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.720349%2C47.222078&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=39.690137%2C47.231316&whatshere%5Bzoom%5D=12&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Микрорайон Новое Поселение — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.720349%2C47.222078&mode=whatshere&whatshere%5Bpoint%5D=39.690137%2C47.231316&whatshere%5Bzoom%5D=12&z=12" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__content wrap">
+            <img src="img/logo_footer.svg" alt="">
+            <ul class="footer__list">
+                <h3 class="title title_vlt title_white">
+                    Контакты
+                </h3>
+                <li class="footer-list__item"><a href="tel:+78121234567">+7 (812) 123-45-67</a></li>
+                <li class="footer-list__item"><a href="tel:+78121234567">+7 (911) 123-45-67</a></li>
+                <li class="footer-list__item"><a href="https://yandex.ru/maps/?text=Москва, ул. Льва Толстого, 16">Новоостровский проспект, дом 36 лит. С</a></li>
+            </ul>
+            <ul class="footer__list">
+                <h3 class="title title_vlt title_white">
+                    Режим работы
+                </h3>
+                <li class="footer-list__item">C 10:00 до 21:00 (Пн-Пт)</li>
+                <li class="footer-list__item">С 11:00 до 20:00 (Сб-Вс)</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="path-to-the-script/splide-extension-url-hash.min.js"></script>
+<script src="./script/slider-c.js"></script>
+</html>

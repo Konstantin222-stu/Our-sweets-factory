@@ -1,0 +1,24 @@
+.slider{
+    padding-top: 57px;
+    padding-bottom: 150px;
+    background-image: url("../img/background-pink_2.jpg");
+    background-size: 100% 120%;
+}
+
+@media (max-width:1280px) {
+    .splide__slide img {
+        width: 90%;
+        height: 100%;
+    }
+    .slider{
+        background-size: 150% 120%;
+    }
+    
+}
+
+@media (max-width:860px) {
+    .splide__slide img {
+        width: 100%;
+    }
+    
+}

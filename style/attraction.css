@@ -1,0 +1,40 @@
+.attraction{
+    padding-top: 57px;
+    padding-bottom: 150px;
+    background-image: url("../img/background-blue.jpg");
+    background-size: 100% 100%;
+}
+.attraction__content .title,.attraction__content .desc{
+    width: 80%;
+    margin: 0 auto 43px auto;
+    text-align: center;
+}
+.attraction__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 38px;
+}
+.attraction__card{
+    text-align: center;
+}
+.attraction__card>img{
+    margin-bottom: 28px;
+}
+
+@media (max-width:775px) {
+    .attraction__cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .attraction{
+        background-size: 150% 100%;
+    }
+}
+@media (max-width:500px) {
+    .attraction__cards{
+        grid-template-columns: 1fr;
+    }
+    .attraction{
+        background-size: 200% 100%;
+    }
+
+}

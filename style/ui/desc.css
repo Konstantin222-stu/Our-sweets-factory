@@ -1,0 +1,37 @@
+.desc{
+    font-family: "Ubuntu";
+    
+}
+.desc_lg{
+    font-size: 32px;
+}
+.desc_md{
+    font-size: 20px;
+}
+.desc_lt-md{
+    font-size: 18px;
+}
+.desc_lt{
+    font-size: 15px;
+}
+.desc_white{
+    color: #fff;
+}
+.desc_black{
+    color: #000;
+}
+.desc_blue{
+    color: #3E77AC;
+}
+.desc_gray{
+    color: #909090;
+}
+.desc_bold{
+    font-weight: 700;
+}
+
+@media (max-width:920px) {
+    .desc_lg{
+        font-size: 24px;
+    }
+}

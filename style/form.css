@@ -1,0 +1,130 @@
+.form{
+    background-image: url("../img/background-form.jpg");
+    padding-top: 57px;
+    padding-bottom: 150px;
+}
+.form__content{
+    position: relative;
+    display: flex;
+}
+.form__info{
+    width: 35%;
+    margin-left: 180px;
+}
+.form__info>.title{
+    margin-bottom: 34px;
+}
+.form__time{
+    color: #FF7CFC;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+}
+.time__hr{
+    border: 2px solid #FF7CFC;
+    border-radius: 5px;
+    padding: 11px 15px;
+}
+.time__min{
+    border: 2px solid #FF7CFC;
+    border-radius: 5px;
+    padding: 11px 15px;
+}
+.form__block{
+    background-color: #F0ECEC;
+    padding: 63px 51px 73px 51px;
+    width: 30%;
+    position: absolute;
+    top: -146px;
+    right: 10%;
+    text-align: center;
+    border-radius: 10px;
+}
+.form__form>form{
+    display: inline-grid;
+    gap: 14px;
+    margin-bottom: 34px;
+}
+.form__form>form>input{
+    width: 330px;
+    height: 46px;
+    border-radius: 7px;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+}
+.form__form>form>input::placeholder{
+    color: #909090;
+    font-size: 18px;
+}
+.form__form>.title{
+    margin-bottom: 21px;
+}
+.form__form>.desc{
+    margin-bottom: 32px;
+}
+.form__form > form{} 
+.form__conteiner{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+@media (max-width:1236px) {
+    .form__info {
+        width: 35%;
+        margin-left: 140px;
+    }
+    .form__block {
+        right: 5%;
+    }
+    
+    .form__form>.title{
+        font-size: 25px;
+        margin: 21px auto;
+    }
+    .form__form>form>input{
+        width: 250px;
+    }
+    .form{
+        background-image: url("../img/background-form.jpg");
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width:950px) {
+    .form__block{
+        width: 100%;
+        position: static;
+    }
+    .form__info{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .form__content{
+        gap: 20px;
+    }
+}
+
+@media (max-width:850px) {
+    .form__block{
+        padding: 30px 10px 30px 10px;
+    }
+
+}
+
+@media (max-width:650px) {
+    .form__content {
+        flex-direction: column;
+    }
+    .form__conteiner>.desc{
+        width: 70%;
+    }
+    .form{
+        background-image: url("../img/background-form.jpg");
+        background-size: 200% 150%;
+    }
+
+}

@@ -1,0 +1,65 @@
+.reviews{
+    padding-top: 57px;
+    padding-bottom: 150px;
+    background-image: url("../img/background-pink_3.jpg");
+    background-size: 100% 145%;
+}
+.reviews__content{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 46px;
+    padding: 20px 0 34px 0;
+}
+.reviews__content>.title{
+    margin-bottom: 46px;
+}
+.review{
+    background: url("../img/rew.jpg");
+    width: 45%;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 14px 30px 34px 30px;
+}
+.review__content>.title{
+    margin-bottom: 17px;
+}
+.review__content>.desc{
+    margin-bottom: 34px;
+}
+.review>img{
+    margin-bottom: 33px;
+}
+.review__content{
+    border-radius: 10px;
+    background-color: #FFACC7;
+    padding: 22px 13px 19px 22px;
+}
+.review__stars{
+    display: flex;
+    justify-content: center;
+}
+
+.splide__arrow{
+    background: none;
+    zoom:3;
+}
+
+.splide__pagination__page{
+    background-color: #FFACC7;
+}
+
+.splide__pagination__page.is-active{
+    background-color: #bc3965;
+}
+
+@media (max-width:860px) {
+    .review{
+        background: url("../img/rew.jpg");
+        width: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 14px 30px 34px 30px;
+    }
+}

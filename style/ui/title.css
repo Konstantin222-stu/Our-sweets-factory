@@ -1,0 +1,33 @@
+.title{
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+}
+.title_lg{
+    font-size: 46px;
+}
+.title_md{
+    font-size: 36px;
+}
+.title_lt{
+    font-size: 23px;
+}
+.title_vlt{
+    font-size: 18px;
+}
+.title_blue{
+    color: #3E77AC;
+
+}
+.title_black{
+    color: #000000;
+
+}
+.title_white{
+    color: #FFFFFF;
+}
+
+@media (max-width:920px) {
+    .title_lg{
+        font-size: 30px;
+    }
+}

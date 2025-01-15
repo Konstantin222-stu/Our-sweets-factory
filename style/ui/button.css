@@ -1,0 +1,17 @@
+.button{
+    padding : 12px 27px;
+}
+.button_lg{
+    font-size: 20px;
+}
+.button_md{
+    font-size: 15px;
+}
+.button_pink{
+    background-color: #FF7CFC;
+    color: #fff;
+}
+.button_dotted{
+    color: #FF7CFC;
+    border-bottom: 2px dotted #FF7CFC;
+}

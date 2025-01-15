@@ -1,0 +1,59 @@
+.dream{
+    padding-top: 57px;
+    padding-bottom: 150px;
+    background-image: url("../img/background-pink.jpg");
+    background-size: 100% 120%;
+}
+.dream__content{
+    text-align: center;
+}
+.dream__content > .title{
+    margin-bottom: 86px;
+    text-align: center;
+}
+.dream__content > .button{
+    margin: auto 0;
+}
+
+.dream__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 98px;
+    margin-bottom: 82px;
+}
+.dream__card{
+    text-align: center;
+    
+}
+.dream__card>img{
+    margin-bottom: 16px;
+}
+.dream__card>.title{
+    margin-bottom: 16px;
+    width: 100%;
+    margin: 0 auto 14px auto;
+}
+
+@media (max-width:960px) {
+    .dream__cards{
+        gap: 20px;
+    }
+}
+
+@media (max-width:755px) {
+    .dream__cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .dream{
+        background-size: 150% 120%;
+    }
+}
+
+@media (max-width:558px) {
+    .dream__cards{
+        grid-template-columns: 1fr;
+    }
+    .dream{
+        background-size: 700% 120%;
+    }
+}

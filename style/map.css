@@ -1,0 +1,43 @@
+.map{
+    padding-top: 57px;
+    padding-bottom: 150px;
+    background-image: url("../img/background-rew.jpg");
+    background-size: 100% 100%;
+}
+.map__content{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 46px;
+    padding: 20px 0 34px 0;
+}
+.map__content>.title{
+    margin-bottom: 14px;
+}
+.map__content>.desc{
+    margin-bottom: 30px;
+}
+
+@media (max-width:692px) {
+    .map{
+        background-size: 150% 100%;
+    }
+    .map__content {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .map__yandex-map{
+        width: 400px;
+    }
+}
+
+@media (max-width:444px) {
+    .map{
+        background-size: 200% 100%;
+    }
+    .map__yandex-map{
+        width: 250px;
+    }
+    
+}
